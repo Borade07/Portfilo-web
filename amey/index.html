@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amey</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div class="user">
+            <img src="profile1.jpg" id="myImg" alt="">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
+
+            <h3 class="name">Amey Borade</h3>
+            <!-- <p class="post">front end developer</p> -->
+            <!-- <i class="fa-brands fa-github"></i>-->
+            <a href="https://github.com/Borade07" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ameyborade" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:borade.amey07@gmail.com" target="_blank"> <i class="fa fa-envelope"></i></a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Project's</a></li>
+                <li><a href="#contact">Connect</a></li>
+  
+                <button id="theme-toggle" class="btn btn-link btn-sm ml-2 small" type="button">
+                    <span class="d-block-light d-none"><a> <i class="fa fa-moon-o"></i></a></span>
+                    
+                   </button>
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+          
+        <h3>Hello World !</h3>
+        <h1>I'M <span >Amey Borade</span></h1>
+
+        <p  >
+            I am Engineering Student, Software Developer and Nature Photographer ! &nbsp;
+            I love talking to people, networking and having long meaningful conversations.
+        </p>
+        <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
+        
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> Let Me<span> Introduce</span> MySelf </h1>
+
+        <div class="row">
+
+            <div class="info">
+
+                <h3> <span> Name : </span>Amey Vivek Borade</h3>
+                <h3> <span> Date of Birth : </span> 31<sup>st</sup>&nbsp; March 2002</h3>
+                <h3> <span> Qualification : </span> B. Tech (pursuing) </h3>
+                <h3> <span> Email : </span> borade.amey07@gmail.com </h3>
+                <br><br><br><br><br><br><br><br><br><br><br>
+
+                <a href="cv.pdf" target="_blank"><button class="btn"> Download CV <i class="fas fa-download"></i>
+                    </button></a>
+                    <!-- <button  class="btn" id="mybtn">Change Style</button> -->
+            </div>
+
+
+            <div class="counter">
+
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="bar">
+              <div class="info">
+                <span>C++</span>
+              </div>
+              <div class="progress-line jquery">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>C</span>
+              </div>
+              <div class="progress-line python">
+                <span></span>
+              </div>
+            </div>
+             -->
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML & CSS</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line JavaScript">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> My <span>Education</span> </h1>
+
+        <div class="box-container">
+
+            <div class="timeline">
+                <div class="container left">
+                    <!-- <div class="date" id="engg">Aug 2019 - Aug 2023<br> DBATU University</div> -->
+                    <div class="date">Aug 2023<br>DBATU<br>University</div>
+
+
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>B. Tech </h2>
+                        <p>
+                            <i>Computer Science and Engineering</i> <br>
+                            N. K. Orchid College of Engg. & Tech. Solapur, Maharashtra
+                        </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="date">Feb 2019<br>Pune Board</div>
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>H.S.C.</h2>
+                        <p>
+                            <i>Science</i> <br>
+                            Shri Basaveshwar Sec. and
+                            High. School, Nimbargi,
+                            Solapur, Maharashtra
+                        </p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="date">Mar 2017<br>Pune Board</div>
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>S.S.C.</h2>
+                        <p>
+
+                            Shri English Medium
+                            High School, Solapur, Maharashtra
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <!-- portfolio section starts  -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> My <span>Project's</span> </h1>
+
+        <div class="box-container">
+            <div class="wrapper">
+
+                <div class="card">
+                    <div class="proname">
+                        <h1>MAD</h1>
+                        <p> <span>Android App</span> for Mobile Application Development for Academic use.</p>
+                    </div>0
+                    <div class="prolinks">
+                        <a href="https://github.com/Borade07/Mad" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://drive.google.com/file/d/1Pwva4rg3_-pDquk0pO-zA4036ta2Wj9E/view?usp=sharing"
+                            target="_blank"><i class="fa fa-android"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="proname">
+                        <br>
+                        <h1>IDBI Registration</h1>
+                        <p>An <span>Web Server</span> for Registration of Client and Generating Unique Customer ID using
+                            &nbsp; <span>JAVA</span> strore data in <span>MySQL</span></p>
+                    </div>0
+                    <div class="prolinks">
+                        <a href="https://github.com/Borade07/IdbiAssignment" target="_blank"><i
+                                class="fa fa-github"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="proname">
+                        <br>
+                        <h1>Hotel Management</h1>
+                        <p>A <span>Python</span> Project get a Bill of Hotel service provide to Customer and save the
+                            data for
+                            Owner in <span>MySQL.</span></p>
+                    </div>
+                    <div class="prolinks">
+                        <a href="https://github.com/Borade07/PythonmanagementProject" target="_blank"><i
+                                class="fa fa-github"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="proname">
+                        <h1>MovieSuggestion </span></h1>
+                        <p> A <span>Machine Learning</span> Model to Suggest a Movie For User.</p>
+                    </div>
+                    <div class="prolinks">
+                        <a href="https://github.com/Borade07/MovieSuggestion" target="_blank"><i
+                                class="fa fa-github"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="proname">
+                        <h1>MyAwesomeCart</h1>
+                        <p>A <span>Dynamic Website</span> to add the item in cart and save the data using
+                            <span>Django.</span></p>
+                    </div>
+                    <div class="prolinks">
+                        <a href="https://github.com/Borade07/MyAwesomeCart" target="_blank"><i
+                                class="fa fa-github"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="proname">
+                        <h1>ToDo</h1>
+                        <p>A<span> Website</span> for save the TODO list using <span>Flask.</span></p>
+                    </div>
+                    <div class="prolinks">
+                        <a href="https://github.com/Borade07/ToDo" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://todo-ameyy.herokuapp.com/" target="_blank"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="proname">
+                        <br>
+                        <h1>CollegeSpace</h1>
+                        <p><span>Website</span> for College Academic Notes and Question Paper with Academic Information.
+                        </p>
+                    </div>0
+                    <div class="prolinks">
+                        <a href="https://github.com/Borade07/collegeS" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://happy-grass-0f67e3610.azurestaticapps.net" target="_blank"><i
+                                class="fa fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="proname">
+                        <br>
+                        <h1>Gyansabha</h1>
+                        <p><span>Website</span> for College Academic Notes and Question Paper with Academic Information.
+                        </p>
+                    </div>
+                    <div class="prolinks">
+                        <a href="https://gyansabha.in/" target="_blank"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Contact</span> Me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">Contact Info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> borade.amey07@gmail.com </h3>
+
+                    <h3> <i class="fas fa-map-marker-alt"></i> Solapur,Maharashtra, india - 413004. </h3>
+                </div>
+
+            </div>
+
+            <form action="https://formspree.io/f/xvoljlbw" method="POST" id="contactForm">
+
+                <input type="text" placeholder="name" class="box" name="Name" id="Name">
+                <input type="email" placeholder="email" class="box" name="Email" id="Email">
+                <input type="text" placeholder="subject" class="box" name="subject" id="Subject">
+                <input class="box message" placeholder="Message" cols="30" rows="10" name="Message" id="Msg">
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+            </form>
+        
+        
+
+        </div>
+        <div class="fot">      
+           <h3 class="fa fa-copyright"> copyright Amey Borade </h3>
+            <a href="https://www.instagram.com/_.no_username_found/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ameyborade" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/PHOTOGRAPH_AMEY" target="_blank"><i class="fa fa-twitter"></i></a>
+
+
+        </div>
+
+    </section>
+
+   
+    <!-- contact section ends -->
+
+
+    <!-- scroll top button  -->
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script>
+        $("#mybtn").on("click",function(){
+  window.alert("sometext");
+  $('link[href="css/styles.css"]').attr('link[href="css/styles2.css"]');
+});
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+
+</html>
